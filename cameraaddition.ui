@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraAddition</class>
+ <widget class="QDialog" name="CameraAddition">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>311</width>
+    <height>172</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>311</width>
+    <height>172</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>311</width>
+    <height>172</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Add camera to room</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #E3EAFF;</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLabel" name="hintLabel">
+     <property name="text">
+      <string>Select camera from existing</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QComboBox" name="camerasList">
+       <property name="styleSheet">
+        <string notr="true">background: white;
+border-radius: 5px;
+height: 30px;</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <property name="labelAlignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+     <item row="0" column="0">
+      <widget class="QLabel" name="addingCamerasAmountInputHint">
+       <property name="text">
+        <string>Adding cameras amount </string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="addingCamerasAmountInputField">
+       <property name="styleSheet">
+        <string notr="true">background: white;
+border-radius: 5px;
+height: 30px;</string>
+       </property>
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QPushButton" name="addCameraToListButton">
+     <property name="styleSheet">
+      <string notr="true">
+QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+
+</string>
+     </property>
+     <property name="text">
+      <string>Add camera to list</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="ConfirmAdditionButton">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="CancelAdditionButton">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Cancel</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

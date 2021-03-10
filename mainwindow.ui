@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>800</width>
+    <height>600</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Camera Arranger</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #E3EAFF;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QScrollArea" name="gridScrollArea">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>383</width>
+         <height>486</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="0" column="2">
+     <widget class="QGroupBox" name="toolsGroup">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="title">
+       <string>Tools</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_6">
+       <item>
+        <widget class="QGroupBox" name="wallGroup">
+         <property name="title">
+          <string>Wall</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="WallButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="heightPartWallSpinBox">
+            <property name="styleSheet">
+             <string notr="true">QSpinBox
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QSpinBox:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="cameraGroup">
+         <property name="title">
+          <string>Camera</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="CameraButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="rotationSpinBox">
+            <property name="styleSheet">
+             <string notr="true">QSpinBox
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QSpinBox:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox_4">
+         <property name="title">
+          <string>Priority</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="PriorityButton">
+            <property name="styleSheet">
+             <string notr="true">QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="prioritySpinBox">
+            <property name="styleSheet">
+             <string notr="true">QSpinBox
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QSpinBox:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="EraseButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>68</width>
+           <height>138</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLabel" name="CurrentToolLabel">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <property name="text">
+       <string>Current Tool: </string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>Actions</string>
+    </property>
+    <addaction name="actionNew_room"/>
+    <addaction name="actionRun"/>
+    <addaction name="actionSave_as"/>
+    <addaction name="actionOpen_room"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options </string>
+    </property>
+    <addaction name="actionSettings"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QDockWidget" name="camera">
+   <property name="minimumSize">
+    <size>
+     <width>181</width>
+     <height>216</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background: #C9D5FF;
+QDockWidget::title 
+{ 
+font: bold;
+ text-align: left; 
+ background: red; 
+ padding-left: 30px; 
+};
+</string>
+   </property>
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable|QDockWidget::DockWidgetVerticalTitleBar</set>
+   </property>
+   <property name="windowTitle">
+    <string>Cameras</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QListWidget" name="camerasListWidget">
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: white;
+border-radius: 5px;
+height: 30px;</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="removeCameraButton">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Remove camera</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="addCameraButton">
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton
+{
+background: white;
+border-radius: 5px; 
+height: 30px;
+}
+QPushButton:hover
+{
+background: rgb(244, 244, 244);
+}
+
+
+</string>
+       </property>
+       <property name="text">
+        <string>Add new Camera</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_room"/>
+   <addaction name="actionSave_as"/>
+   <addaction name="actionNew_room"/>
+   <addaction name="actionRun"/>
+  </widget>
+  <action name="actionProcess">
+   <property name="text">
+    <string>Process</string>
+   </property>
+  </action>
+  <action name="actionCameras_information">
+   <property name="text">
+    <string>Camera</string>
+   </property>
+  </action>
+  <action name="actionToolbar">
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+  </action>
+  <action name="action_3">
+   <property name="text">
+    <string>View settings</string>
+   </property>
+  </action>
+  <action name="actionProcess_2">
+   <property name="text">
+    <string>Process</string>
+   </property>
+  </action>
+  <action name="actionCameras">
+   <property name="text">
+    <string>Cameras</string>
+   </property>
+  </action>
+  <action name="actionToolbar_2">
+   <property name="text">
+    <string>Toolbar</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="text">
+    <string>Shortcuts</string>
+   </property>
+  </action>
+  <action name="actionNew_room">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/tool/resources/new_room.png</normaloff>:/tool/resources/new_room.png</iconset>
+   </property>
+   <property name="text">
+    <string>New room</string>
+   </property>
+  </action>
+  <action name="actionRun">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/tool/resources/start-line.png</normaloff>:/tool/resources/start-line.png</iconset>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </action>
+  <action name="actionRecount">
+   <property name="text">
+    <string>Recount </string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionSave_as">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/tool/resources/save.png</normaloff>:/tool/resources/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save as</string>
+   </property>
+  </action>
+  <action name="actionOpen_room">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/tool/resources/open.png</normaloff>:/tool/resources/open.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open room</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>

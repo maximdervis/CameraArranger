@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/tool">
+        <file>resources/exit.png</file>
+        <file>resources/start-line.png</file>
+        <file>resources/new_room.png</file>
+        <file>resources/reload.png</file>
+        <file>resources/wall.png</file>
+        <file>resources/eraser.png</file>
+        <file>resources/camera.png</file>
+        <file>resources/partwall.png</file>
+        <file>resources/save.png</file>
+        <file>resources/open.png</file>
+        <file>resources/priority.png</file>
+    </qresource>
+</RCC>
